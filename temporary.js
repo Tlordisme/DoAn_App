@@ -1,14 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react'
-import { Provider } from 'react-native-paper'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { theme } from './src/core/theme'
-
 import TabNavigation from './src/Navigation/TabNavigation'
-//import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-expo';
-//import HomeScreen from './src/screens/HomeScreen/HomeScreen';
+
 
 
 

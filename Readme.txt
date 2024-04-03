@@ -1,20 +1,51 @@
+npx create-expo-app 
+cd 
+npx expo start
+
+
+
+npx expo install react-dom react-native-web @expo/metro-runtime
+
+
+npm install @react-navigation/native
+
+npm install react-native-screens react-native-safe-area-context
+
+npm install @react-navigation/native-stack
+
+npm install @clerk/clerk-expo
+
+npx expo install expo-web-browser
+
+npm install expo-secure-store
+
+
+
+
+
+
+
+
+---------------------------------------------
+TodoList
 npm install --save moment-timezone
 
 npm i react-native-paper
 npm install @react-navigation/bottom-tabs
 npm install --save @react-native-community/masked-view
 npm install react-native-vector-icons
-npm install react-native-modal-datetime-picker
-react-native-push-notification
+npx expo install expo-font
+
+npm install --save moment-timezone
+
+npm i react-native-paper
+npm install @react-navigation/bottom-tabs
+npm install --save @react-native-community/masked-view
+npm install react-native-vector-icons
+
 react redux
-            {/* <View style={styles.placeholderInset}>
-              <Text>A nhong</Text>
-            </View> */}
-         // </View> 
 
 npm install @shopify/restyle
 
-
 mongo:
 yarn add body-parser cors express mongoose nodemon jsonwebtoken
-npm install expo-router

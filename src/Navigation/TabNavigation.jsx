@@ -10,31 +10,6 @@ import {FontAwesome} from 'react-native-vector-icons'
 
 const Tab = createBottomTabNavigator();
 
-// function HomeScreen() {
-//   return (
-//     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'stretch' }}>
-//       <Calendar/>
-//     </View>
-//   );
-// }
-
-// function SettingsScreen() {
-//   return (
-//     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-//       <Text>Ngu</Text>
-//       <Text>Ngoc</Text>
-//     </View>
-//   );
-// }
-// function ProfileScreen() {
-//     return (
-//       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-//         <Text>Profile</Text>
-//       </View>
-//     );
-//   }
-
-
 export default function Home() {
   return (
       <Tab.Navigator screenOptions={{
