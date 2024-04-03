@@ -13,3 +13,8 @@ react redux
          // </View> 
 
 npm install @shopify/restyle
+
+
+mongo:
+yarn add body-parser cors express mongoose nodemon jsonwebtoken
+npm install expo-router

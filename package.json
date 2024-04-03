@@ -19,6 +19,7 @@
     "@types/react": "~18.2.45",
     "expo": "^50.0.14",
     "expo-font": "~11.10.3",
+    "expo-router": "^3.4.8",
     "expo-secure-store": "^12.8.1",
     "expo-status-bar": "~1.11.1",
     "expo-web-browser": "~12.8.2",

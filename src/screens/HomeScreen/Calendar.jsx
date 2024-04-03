@@ -8,7 +8,7 @@ import {
   Dimensions,
   TouchableOpacity,
 } from 'react-native';
-import moment from 'moment';
+import moment, { RFC_2822 } from 'moment';
 import Swiper from 'react-native-swiper';
 import Colors from './../../Utils/Colors';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -36,7 +36,7 @@ export default function Calendar() {
   }, [week]);
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    //<SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
         <View style={styles.header}>
         <Text style={styles.title}>{value.toDateString()}</Text>
@@ -103,12 +103,7 @@ export default function Calendar() {
           </Swiper>
         </View>
 
-        <View style={{ flex: 1, paddingHorizontal: 16, paddingVertical: 24 }}>
-          <Text style={styles.subtitle}>Make your TodoList</Text>
-          
-        </View>
-
-        <View style={styles.footer}>
+        {/* <View style={styles.footer}>
           <TouchableOpacity
             onPress={() => {
               // handle onPress
@@ -119,20 +114,21 @@ export default function Calendar() {
               
             </View>
           </TouchableOpacity>
-        </View>
+        </View> */}
       </View>
-    </SafeAreaView>
+    //</SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingVertical: 24,
+    paddingVertical: 5,    
+    alignItems:'center', justifyContent:'flex-start',
     
   },
   header: {
-    paddingHorizontal: 16,
+    paddingHorizontal: 10,
     alignItems: 'center'
     
   },
@@ -147,32 +143,26 @@ const styles = StyleSheet.create({
   },
   picker: {
     flex: 1,
-    maxHeight: 74,
-    paddingVertical: 12,
+    maxHeight: 90,
+    paddingVertical: 7,
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-start',
   
   },
-  subtitle: {
-    fontSize: 17,
-    fontWeight: '600',
-    color: Colors.BLACK,
-    marginBottom: 12,
-  },
-  footer: {
-    marginTop: 'auto',
-    paddingHorizontal: 16,
-    alignItems:'center',
-    justifyContent:'center'
-  },
+  // footer: {
+  //   marginTop: 'auto',
+  //   paddingHorizontal: 16,
+  //   alignItems:'center',
+  //   justifyContent:'center'
+  // },
   /** Item */
   item: {
     flex: 1,
     height: 50,
     marginHorizontal: 4,
-    paddingVertical: 6,
+    paddingVertical: 1,
     paddingHorizontal: 4,
-    borderWidth: 0,
+    borderWidth: 1,
     borderRadius: 10,
     borderColor: '#e3e3e3',
     flexDirection: 'column',
@@ -181,9 +171,9 @@ const styles = StyleSheet.create({
   itemRow: {
     width: width,
     flexDirection: 'row',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     justifyContent: 'space-between',
-    marginHorizontal: -4,
+    marginHorizontal: 4,
   },
   itemWeekday: {
     fontSize: 13,
@@ -195,37 +185,5 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: '600',
     color: '#111',
-  },
-  /** Placeholder */
-  placeholder: {
-    flexGrow: 1,
-    flexShrink: 1,
-    flexBasis: 0,
-    height: 400,
-    marginTop: 0,
-    padding: 0,
-    backgroundColor: Colors.WHITE,
-
-  },
-  placeholderInset: {
-    borderWidth: 4,
-    borderColor: '#e5e7eb',
-    borderStyle: 'solid',
-    borderRadius: 9,
-    flexGrow: 1,
-    flexShrink: 1,
-    flexBasis: 0,
-  },
-  /** Button */
-  btn: {
-    width: 60,
-    height: 60,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 100,
-    paddingVertical: 5,
-
-    backgroundColor: Colors.PRIMARY
-  },
+  }
 });

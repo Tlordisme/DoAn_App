@@ -4,8 +4,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import HomeScreen from '../screens/HomeScreen/HomeScreen';
-import SettingScreen from '../screens/SettingScreen/SettingScreen';
+import TaskScreen from '../screens/TaskScreen/Task';
 import ProfileScreen from '../screens/ProfileScreen/ProfileScreen';
+import {FontAwesome} from 'react-native-vector-icons'
 
 const Tab = createBottomTabNavigator();
 
@@ -48,13 +49,13 @@ export default function Home() {
             ),
           }}/>
         
-        <Tab.Screen name="Settings" component={SettingScreen} 
+        <Tab.Screen name="Task" component={TaskScreen} 
         options={{
             tabBarLabel:({color}) =>(
-              <Text style={{color:color, fontSize:12, justifyContent:'center',marginTop: -7}}>Setting</Text>
+              <Text style={{color:color, fontSize:12, justifyContent:'center',marginTop: -7}}>Task</Text>
             ),
             tabBarIcon: ({ color, size }) => (
-              <Ionicons name="settings" size={size} color={color} />
+              <FontAwesome name="tasks" size={size} color={color} />
             )
           }}/>
 

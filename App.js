@@ -7,26 +7,10 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { theme } from './src/core/theme'
 
 import TabNavigation from './src/Navigation/TabNavigation'
-import Login from './src/screens/LoginScreen/Login.jsx';
-import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-expo';
-import HomeScreen from './src/screens/HomeScreen/HomeScreen';
+//import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-expo';
+//import HomeScreen from './src/screens/HomeScreen/HomeScreen';
 
-// const tokenCache = {
-//   async getToken(key) {
-//     try {
-//       return SecureStore.getItemAsync(key);
-//     } catch (err) {
-//       return null;
-//     }
-//   },
-//   async saveToken(key, value) {
-//     try {
-//       return SecureStore.setItemAsync(key, value);
-//     } catch (err) {
-//       return;
-//     }
-//   },
-// };
+
 
 const Stack = createNativeStackNavigator()
 
